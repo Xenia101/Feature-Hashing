@@ -25,6 +25,8 @@ f = h.transform(data)
 ### Example
 
 ```
+# 1
+
 # Length    5         7        4          9
 Input = ['Apple', 'Pumpkin', 'Corn', 'Blueberry']
 
@@ -37,6 +39,8 @@ Output =
 ```
 
 ```
+# 2
+
 # Added 'Apple1' to list of Input
 Input = ['Apple', 'Pumpkin', 'Corn', 'Blueberry', 'Apple1']
 
