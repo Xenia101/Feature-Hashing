@@ -21,3 +21,32 @@ from sklearn.feature_extraction import FeatureHasher
 h = FeatureHasher(n_features=n, input_type="string")
 f = h.transform(data)
 ```
+
+### Example
+
+```
+# Length    5         7        4          9
+Input = ['Apple', 'Pumpkin', 'Corn', 'Blueberry']
+```
+  
+```
+# Output of equal length
+Output = 
+ [[ 0.  0.  2.  0.  0.  0. -2.  0.  0.  1.]
+  [ 0. -3.  1.  0. -1.  0.  0.  0.  0.  0.]
+  [ 0. -1.  0.  1. -1.  1.  0.  0.  0.  0.]
+  [ 0. -1.  1.  0.  1.  2.  0.  0.  0.  2.]]
+```
+
+```
+# Added 'Apple1' to list of Input
+Input = ['Apple', 'Pumpkin', 'Corn', 'Blueberry', 'Apple1']
+```
+
+```
+[[ 0.  0.  2.  0.  0.  0. -2.  0.  0.  1.]
+ [ 0. -3.  1.  0. -1.  0.  0.  0.  0.  0.]
+ [ 0. -1.  0.  1. -1.  1.  0.  0.  0.  0.]
+ [ 0. -1.  1.  0.  1.  2.  0.  0.  0.  2.]
+ [ 0.  0.  2.  0.  0.  0. -2. -1.  0.  1.]] # The results have changed, but they are similar
+```
