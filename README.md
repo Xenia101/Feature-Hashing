@@ -27,9 +27,7 @@ f = h.transform(data)
 ```
 # Length    5         7        4          9
 Input = ['Apple', 'Pumpkin', 'Corn', 'Blueberry']
-```
-  
-```
+
 # Output of equal length
 Output = 
  [[ 0.  0.  2.  0.  0.  0. -2.  0.  0.  1.]
@@ -41,9 +39,7 @@ Output =
 ```
 # Added 'Apple1' to list of Input
 Input = ['Apple', 'Pumpkin', 'Corn', 'Blueberry', 'Apple1']
-```
 
-```
 Output = 
 [[ 0.  0.  2.  0.  0.  0. -2.  0.  0.  1.]
  [ 0. -3.  1.  0. -1.  0.  0.  0.  0.  0.]
