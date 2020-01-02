@@ -22,7 +22,7 @@ h = FeatureHasher(n_features=n, input_type="string")
 f = h.transform(data)
 ```
 
-### Example
+### Example of feature hashing
 
 ```
 # 1
