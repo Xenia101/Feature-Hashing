@@ -13,7 +13,7 @@ Feature are required when machine learning is in operation.
 
 Since the **lengths of the features are different**, it is necessary to process them.
 
-## EXAMPLE
+## Example
 
 ```python
 from sklearn.feature_extraction import FeatureHasher
